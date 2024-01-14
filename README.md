@@ -1,5 +1,5 @@
 # Acordeão
-- Neste projeto realizei um acordeão de perguntas e respostas interativo e responsivo
+- Neste projeto realizei um acordeão de perguntas e respostas interativo e responsivo.
 - 🚀 Confira através do link: https://gabrielmoraes98.github.io/first-accordion/
 
- ![image](https://github.com/GabrielMoraes98/first-accordion/assets/127905683/6cdb5930-3ae7-4ecf-9ddc-5d095a14d8ca)
+![screen-accordion](https://github.com/GabrielMoraes98/first-accordion/assets/127905683/b5f9b84b-8c01-4423-aed6-dad3dab769f4)
