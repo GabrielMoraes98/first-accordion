@@ -1,0 +1,83 @@
+body {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+}
+body .container {
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 60rem;
+  height: 32rem;
+  padding-left: 14rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid #555;
+}
+body .container img {
+  position: absolute;
+  left: -15rem;
+  bottom: 1rem;
+}
+body .container .accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 95%;
+}
+body .container .accordion h1 {
+  font-weight: 600;
+}
+body .container .accordion ul .questions-and-answers {
+  background-image: url(../src/imagens/seta-fechada.png);
+  background-repeat: no-repeat;
+  background-position: right 0;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px #555;
+  cursor: pointer;
+}
+body .container .accordion ul .questions-and-answers:last-child {
+  border-bottom: none;
+}
+body .container .accordion ul .questions-and-answers.active {
+  background-image: url(../src/imagens/seta-aberta.png);
+}
+body .container .accordion ul .questions-and-answers .question {
+  transition: ease-in-out 0.2s;
+}
+body .container .accordion ul .questions-and-answers .question:hover {
+  color: orange;
+}
+body .container .accordion ul .questions-and-answers .answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+body .container .accordion ul .questions-and-answers.active .answer {
+  max-height: 200px;
+}
+@media (max-width: 900px) {
+  body .container {
+    padding-left: 0rem;
+    width: 90%;
+    height: 36rem;
+  }
+  body .container img {
+    top: -4rem;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    width: 20rem;
+  }
+  body .container .accordion {
+    margin: 4rem auto 0rem;
+  }
+  body .container .accordion h1 {
+    text-align: center;
+  }
+}
